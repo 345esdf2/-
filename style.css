@@ -1,0 +1,680 @@
+/* =========================================
+   기본 설정
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 50px 20px;
+
+  background: #eeeeeb;
+
+  color: #27384b;
+
+  font-family:
+      "Noto Serif KR",
+      "Noto Serif JP",
+      serif;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+ 전체 문서
+========================================= */
+
+.document {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+  padding: 50px 50px 35px;
+
+  background: #fffefa;
+
+  border: 1px solid #aeb6bd;
+
+  box-shadow:
+      0 8px 30px rgba(30, 40, 50, 0.08);
+}
+
+
+/* =========================================
+ 문서 상단
+========================================= */
+
+.document-header {
+  margin-bottom: 38px;
+
+  text-align: center;
+}
+
+
+/* 커뮤니티 이름 */
+
+.community-name {
+  margin-bottom: 7px;
+
+  color: #71808e;
+
+  font-family:
+      "Noto Serif JP",
+      "Noto Serif KR",
+      serif;
+
+  font-size: 13px;
+
+  letter-spacing: 0.18em;
+}
+
+
+/* 학교 이름 */
+
+.school-name {
+  color: #31465b;
+
+  font-family:
+      "Noto Serif JP",
+      "Noto Serif KR",
+      serif;
+
+  font-size: 16px;
+
+  letter-spacing: 0.08em;
+}
+
+
+/* 제목 위 선 */
+
+.header-line {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 22px 0 27px;
+
+  background: #41566c;
+}
+
+
+/* 메인 제목 */
+
+.title {
+  margin: 0;
+
+  color: #26394d;
+
+  font-family:
+      "Noto Serif KR",
+      "Noto Serif JP",
+      serif;
+
+  font-size: 36px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
+}
+
+
+/* 영문 제목 */
+
+.title-en {
+  margin: 5px 0 0;
+
+  color: #708091;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  letter-spacing: 0.3em;
+}
+
+
+/* =========================================
+ 학생 기본 정보
+========================================= */
+
+.student-header {
+  display: grid;
+
+  grid-template-columns: 1fr 190px;
+
+  gap: 25px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+ 학급 / 번호
+========================================= */
+
+.class-info {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-bottom: 10px;
+}
+
+
+.class-table {
+  border-collapse: collapse;
+
+  font-size: 13px;
+}
+
+
+.class-table th,
+.class-table td {
+  padding: 7px 14px;
+
+  border: 1px solid #aeb8c1;
+
+  text-align: center;
+}
+
+
+.class-table th {
+  background: #f2f4f4;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+ 기본정보 표
+========================================= */
+
+.basic-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  font-size: 14px;
+}
+
+
+.basic-table th,
+.basic-table td {
+  padding: 15px 16px;
+
+  border: 1px solid #aeb8c1;
+}
+
+
+.basic-table th {
+  width: 90px;
+
+  background: #f4f5f3;
+
+  text-align: center;
+
+  font-weight: 500;
+}
+
+
+.basic-table td {
+  background: #fffefa;
+}
+
+
+/* 이름 */
+
+.name {
+  font-family:
+      "Noto Serif JP",
+      "Noto Serif KR",
+      serif;
+
+  font-size: 22px;
+
+  letter-spacing: 0.08em;
+}
+
+
+.name-reading {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #7b8792;
+
+  font-family:
+      "Noto Sans KR",
+      "Noto Sans JP",
+      sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+ 프로필 이미지
+========================================= */
+
+.profile {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+}
+
+
+.profile-image {
+  width: 180px;
+  height: 225px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #aeb8c1;
+}
+
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.profile-caption {
+  margin: 7px 0 0;
+
+  color: #7b8792;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+ 섹션
+========================================= */
+
+.section {
+  margin-top: 32px;
+}
+
+
+.section-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin: 0 0 9px;
+
+  color: #31465b;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.04em;
+}
+
+
+.section-title::before {
+  content: "";
+
+  width: 7px;
+  height: 7px;
+
+  background: #40566d;
+}
+
+
+/* =========================================
+ 공통 표
+========================================= */
+
+.record-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+
+  font-size: 13px;
+}
+
+
+.record-table th,
+.record-table td {
+  padding: 13px 15px;
+
+  border: 1px solid #adb7c0;
+}
+
+
+.record-table th {
+  width: 120px;
+
+  background: #f3f4f2;
+
+  color: #35485c;
+
+  text-align: center;
+
+  font-weight: 500;
+}
+
+
+.record-table td {
+  background: #fffefa;
+
+  color: #3d4853;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+ 신체사항
+========================================= */
+
+.physical-table th {
+  width: 120px;
+}
+
+
+.physical-table td {
+  font-size: 15px;
+
+  text-align: center;
+}
+
+
+/* =========================================
+ 긴 설명
+========================================= */
+
+.long-text th {
+  padding-top: 17px;
+
+  vertical-align: top;
+}
+
+
+.long-text td {
+  min-height: 130px;
+
+  padding: 20px;
+
+  vertical-align: top;
+}
+
+
+.long-text p {
+  margin: 0 0 8px;
+}
+
+
+.long-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+.guide-text {
+  color: #78828b;
+
+  font-family:
+      "Noto Sans KR",
+      "Noto Sans JP",
+      sans-serif;
+
+  font-size: 12px;
+
+  line-height: 2;
+}
+
+
+/* =========================================
+ 성격
+========================================= */
+
+.personality {
+  padding: 28px !important;
+
+  color: #3d4853 !important;
+
+  font-size: 14px;
+
+  line-height: 2;
+
+  text-align: left;
+}
+
+
+.personality p {
+  margin: 0 0 22px;
+}
+
+
+.personality p:last-child {
+  margin-bottom: 0;
+}
+
+
+.personality strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #52677d;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+ 기타사항
+========================================= */
+
+.other-area {
+  min-height: 150px;
+}
+
+
+.keyword-list {
+  margin: 15px 0;
+}
+
+
+.keyword {
+  display: inline-block;
+
+  margin-right: 14px;
+  margin-bottom: 7px;
+
+  color: #6d7780;
+
+  font-family:
+      "Noto Sans KR",
+      "Noto Sans JP",
+      sans-serif;
+
+  font-size: 12px;
+}
+
+
+.keyword::before {
+  content: "· ";
+
+  color: #52677d;
+}
+
+
+/* =========================================
+ 선관
+========================================= */
+
+.relation-table th:first-child {
+  width: 90px;
+}
+
+
+.relation-table th:nth-child(2) {
+  width: 200px;
+}
+
+
+.relation-table td {
+  vertical-align: middle;
+}
+
+
+.relation-empty {
+  color: #9aa1a6 !important;
+
+  text-align: center;
+}
+
+
+/* =========================================
+ 하단
+========================================= */
+
+.footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 40px;
+  padding-top: 18px;
+
+  border-top: 1px solid #b5bcc2;
+
+  color: #8a939b;
+
+  font-family:
+      "Noto Sans KR",
+      "Noto Sans JP",
+      sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+}
+
+
+.footer p {
+  margin: 0;
+}
+
+
+/* =========================================
+ 모바일
+========================================= */
+
+@media (max-width: 700px) {
+
+  body {
+      padding: 15px 8px;
+  }
+
+
+  .document {
+      padding: 30px 18px;
+  }
+
+
+  .community-name {
+      font-size: 10px;
+
+      letter-spacing: 0.12em;
+  }
+
+
+  .school-name {
+      font-size: 13px;
+  }
+
+
+  .title {
+      font-size: 27px;
+  }
+
+
+  .student-header {
+      grid-template-columns: 1fr;
+  }
+
+
+  .profile {
+      order: -1;
+  }
+
+
+  .profile-image {
+      width: 150px;
+      height: 190px;
+  }
+
+
+  .class-info {
+      justify-content: flex-start;
+  }
+
+
+  .record-table th,
+  .record-table td {
+      padding: 10px 8px;
+
+      font-size: 12px;
+  }
+
+
+  .record-table th {
+      width: 85px;
+  }
+
+
+  .personality {
+      font-size: 12px;
+
+      line-height: 1.9;
+  }
+
+
+  .personality strong {
+      font-size: 14px;
+  }
+
+
+  .footer {
+      flex-direction: column;
+
+      gap: 8px;
+
+      text-align: center;
+  }
+
+}
