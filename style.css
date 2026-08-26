@@ -494,67 +494,136 @@ body {
 
 
 /* =========================================
- 기타사항
+   기타사항 세부 표
 ========================================= */
 
-.other-area {
-  min-height: 150px;
+.detail-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+
+  font-size: 13px;
 }
 
 
-.keyword-list {
-  margin: 15px 0;
+/* -----------------------------------------
+ 기타 인덱스
+----------------------------------------- */
+
+.detail-header th {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  background: #e9eceb;
+
+  border: 1px solid #adb7c0;
+
+  color: #31465b;
+
+  text-align: left;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
 }
 
 
-.keyword {
-  display: inline-block;
+/* -----------------------------------------
+ 제목 칸
+----------------------------------------- */
 
-  margin-right: 14px;
-  margin-bottom: 7px;
+.detail-title {
+  width: 120px;
 
-  color: #6d7780;
+  padding: 16px 12px;
 
-  font-family:
-      "Noto Sans KR",
-      "Noto Sans JP",
-      sans-serif;
+  background: #f3f4f2;
 
-  font-size: 12px;
-}
+  border: 1px solid #adb7c0;
 
-
-.keyword::before {
-  content: "· ";
-
-  color: #52677d;
-}
-
-
-/* =========================================
- 선관
-========================================= */
-
-.relation-table th:first-child {
-  width: 90px;
-}
-
-
-.relation-table th:nth-child(2) {
-  width: 200px;
-}
-
-
-.relation-table td {
-  vertical-align: middle;
-}
-
-
-.relation-empty {
-  color: #9aa1a6 !important;
+  color: #35485c;
 
   text-align: center;
+
+  vertical-align: top;
+
+  font-weight: 500;
+
+  letter-spacing: 0.04em;
 }
+
+
+/* -----------------------------------------
+ 내용 칸
+----------------------------------------- */
+
+.detail-content {
+  padding: 19px 22px;
+
+  background: #fffefa;
+
+  border: 1px solid #adb7c0;
+
+  color: #3d4853;
+
+  vertical-align: top;
+
+  line-height: 2;
+}
+
+
+.detail-content p {
+  margin: 0 0 20px;
+}
+
+
+.detail-content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* -----------------------------------------
+ 기타사항 모바일
+----------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .detail-title {
+      width: 80px;
+
+      padding: 12px 7px;
+
+      font-size: 11px;
+  }
+
+
+  .detail-content {
+      padding: 15px 12px;
+
+      font-size: 12px;
+
+      line-height: 1.9;
+  }
+
+
+  .detail-content p {
+      margin-bottom: 17px;
+  }
+
+
+  .detail-header th {
+      padding: 11px;
+
+      font-size: 14px;
+  }
+
+}
+
 
 
 /* =========================================
